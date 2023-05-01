@@ -28,7 +28,6 @@ namespace Explorite.KarmaReinforcementReinforcement
 
 			// Put your custom hooks here!
 			On.OverWorld.Update += OverWorld_Update;
-			On.OverWorld.LoadWorld;
 		}
 
 		// Load any resources, such as sprites or sounds
