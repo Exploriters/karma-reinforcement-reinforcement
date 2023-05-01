@@ -1,0 +1,8 @@
+﻿{
+	"id": "explorite.karma_reinforcement_reinforcement",
+	"name": "Karma reinforcement reinforcement",
+	"authors": "siiftun1857",
+	"description": "Gain karma reinforcement when you don't have it.<LINE>This will cause a vast decreasing of difficulty, used with caution!",
+	"requirements": [ "slime-cubed.slugbase" ],
+	"requirements_names": [ "SlugBase" ]
+}
