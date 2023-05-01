@@ -1,18 +1,14 @@
 ﻿using System;
 using BepInEx;
 using UnityEngine;
-using SlugBase.Features;
-using static SlugBase.Features.FeatureTypes;
 using Menu;
 
 namespace Explorite.KarmaReinforcementReinforcement
 {
-	[BepInPlugin(MOD_ID, "Slugcat Template", "0.1.0")]
+	[BepInPlugin(MOD_ID, "Karma Reinforcement Reinforcement", "0.0.0")]
 	class Plugin : BaseUnityPlugin
 	{
 		private const string MOD_ID = "explorite.karma_reinforcement_reinforcement";
-
-		//public static readonly GameFeature<bool> PrementKarmaReinforcement = GameBool("explorite/prement_karma_reinforcement");
 		private OptionsMenu options { get; }
 		public Plugin()
 		{
@@ -56,9 +52,6 @@ namespace Explorite.KarmaReinforcementReinforcement
 			orig(self);
 
 			if (
-				//PrementKarmaReinforcement.TryGet(self.game, out bool enabled)
-				//&& enabled
-				//&& 
 				options.KarmaReinforcementEnabled.Value &&
 				!(self.game.session as StoryGameSession).saveState.deathPersistentSaveData.reinforcedKarma
 				)
