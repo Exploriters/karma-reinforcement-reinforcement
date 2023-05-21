@@ -52,11 +52,11 @@ namespace Explorite.KarmaReinforcementReinforcement
 			orig(self);
 
 			if (
-				options.KarmaReinforcementEnabled.Value &&
-				!(self.game.session as StoryGameSession).saveState.deathPersistentSaveData.reinforcedKarma
+				options.KarmaReinforcementEnabled.Value && self.game.session is StoryGameSession storyGameSession
+				&& storyGameSession.saveState.deathPersistentSaveData.reinforcedKarma
 				)
 			{
-				(self.game.session as StoryGameSession).saveState.deathPersistentSaveData.reinforcedKarma = true;
+				storyGameSession.saveState.deathPersistentSaveData.reinforcedKarma = true;
 			}
 		}
 	}
